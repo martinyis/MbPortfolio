@@ -4,7 +4,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div className="mt-[73px] flex justify-between gap-[20px] md:gap-[10px] md:flex-col  md:items-center">
+    <div className="mt-[73px] flex justify-between gap-[20px] md:gap-[10px] md:flex-col  md:items-center mb-[200px]">
       <div>
         <h2 className="text-primary text-[25px] font-light mb-[10px] md:text-[18px]">
           Hi, my name is
@@ -18,7 +18,9 @@ const About = (props: Props) => {
           alias ea quidem vero ratione, corporis eveniet est? Minus porro
           dignissimos sequi.
         </p>
-        <button></button>
+        <button className="py-[12px] px-[93px] md:py-[6px] md:px-[41px] sm:py-[4px] sm:px-[20px] text-primary text-[23px] border-[1px] border-primary rounded-[10px] mb-[33px]">
+          Check my resume
+        </button>
       </div>
       <div className="max-w-[363px] max-h-[311px] relative">
         <Image
