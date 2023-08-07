@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import Fade from "react-reveal/Fade";
+
 type TypeProjects = {
   image: string;
   title: string;
@@ -14,7 +17,7 @@ const Projects = () => {
       image: "/moviesensei.png",
       title: "Movie Sensei",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas omnis labore maiores quisquam obcaecati praesentium impedit aliquam magni alias ea quidem vero ratione, corporis eveniet est? Minus porro dignissimos sequi.",
+        "I launched MovieSensei a SAAS platform powered by React.js, Redux, and Tailwind on the front-end, and Node.js, Express.js, and MongoDB on the backend. With the OpenAI API and OMDBAPI integration, accurate movie recommendations thrive. OAuth 2.0 ensures secure authentication, MongoDB safeguards user data, and AWS hosting guarantees a smooth user experience. Explore on GitHub or live here.",
       githubLink: "https://github.com/martinyis/MovieSensei",
       liveLink: "https://movie-sensei.vercel.app/",
     },
@@ -22,13 +25,13 @@ const Projects = () => {
       image: "/repoappidea.png",
       title: "RepoAppIdea",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas omnis labore maiores quisquam obcaecati praesentium impedit aliquam magni alias ea quidem vero ratione, corporis eveniet est? Minus porro dignissimos sequi.",
+        "I created RepoAppIdea a robust MERN stack platform (React.js, Node.js, Express.js, MongoDB) that empowers GitHub users to share projects and profiles seamlessly. I established secure user authentication using JWT and OAuth 2.0, managed a collaborative team of 20 contributors, and garnered widespread interest with 35+ forks.",
       githubLink: "https://github.com/martinyis/RepoAppIdea",
       liveLink: "https://repo-app-idea.vercel.app/",
     },
   ];
   return (
-    <div className="mb-[200px] flex flex-col gap-[20px]">
+    <section id="projects" className="mb-[200px] flex flex-col gap-[20px]">
       <div className="flex items-center gap-[10px] mb-[71px]">
         <h2 className="text-[30px] font-semibold text-[#D9D9D9]">
           Some Things I’ve built
@@ -37,45 +40,47 @@ const Projects = () => {
       </div>
       {projects.map((project, index) => {
         return (
-          <div className="flex md:flex-col items-center gap-[20px] bg-[#233554] pl-[18px] pr-[24px] pt-[58px] max-w-[1002px] mx-auto pb-[45px] rounded-tl-0 rounded-tr-[55px] rounded-br-0 rounded-bl-[55px]">
-            <div className="">
-              <Image
-                src={project.image}
-                alt="Porfolio picture"
-                width={490}
-                height={247}
-              ></Image>
-            </div>
-            <div>
-              <h1 className="text-[30px] font-bold mb-[10px] max-w-[450px]">
-                {project.title}
-              </h1>
-              <p className="text-[18px] max-w-[450px] mb-[17px]">
-                {project.description}
-              </p>
-              <div className="flex items-center gap-[20px]">
-                <a href={project.githubLink}>
-                  <Image
-                    src="/icons/github-project-icon.png"
-                    alt="Github icon"
-                    width={27}
-                    height={27}
-                  />
-                </a>
-                <a href={project.liveLink}>
-                  <Image
-                    src="/icons/open-project-icon.png"
-                    alt="Live icon"
-                    width={27}
-                    height={27}
-                  />
-                </a>
+          <Fade bottom>
+            <div className="flex md:flex-col items-center gap-[20px] bg-[#233554] pl-[18px] pr-[24px] pt-[58px] max-w-[1002px] mx-auto pb-[45px] rounded-tl-0 rounded-tr-[55px] rounded-br-0 rounded-bl-[55px]">
+              <div className="">
+                <Image
+                  src={project.image}
+                  alt="Porfolio picture"
+                  width={490}
+                  height={247}
+                ></Image>
+              </div>
+              <div>
+                <h1 className="text-[30px] font-bold mb-[10px] max-w-[450px]">
+                  {project.title}
+                </h1>
+                <p className="text-[18px] max-w-[450px] mb-[17px]">
+                  {project.description}
+                </p>
+                <div className="flex items-center gap-[20px]">
+                  <a href={project.githubLink}>
+                    <Image
+                      src="/icons/github-project-icon.png"
+                      alt="Github icon"
+                      width={27}
+                      height={27}
+                    />
+                  </a>
+                  <a href={project.liveLink}>
+                    <Image
+                      src="/icons/open-project-icon.png"
+                      alt="Live icon"
+                      width={27}
+                      height={27}
+                    />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          </Fade>
         );
       })}
-    </div>
+    </section>
   );
 };
 

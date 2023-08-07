@@ -11,13 +11,13 @@ export const experiances: TypeExpreiance[] = [
     role: "Web Developer",
     company: "Company Name",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.",
+      "I collaborated on developing the UNH IESS scholarship program website, enhancing user experience with CMS Drupal. I streamlined content management, maintained the site using HTML/CSS, and played a vital role in its successful implementation.",
   },
   {
-    date: "2019 - 2020",
-    role: "Frontend Developer",
-    company: "Company Name",
+    date: "July 2023 - Present",
+    role: "Software Engineer",
+    company: "Echo Web",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id.",
+      "As a freelance Software Engineer at Echo Web since July 2023, I've been creating website front ends using Next.js, React.js, and TypeScript. I specialize in crafting responsive, modern UI designs using Tailwind CSS, and I'm dedicated to optimizing SEO practices for improved website visibility and ranking.",
   },
 ];
