@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Fade from "react-reveal/Fade";
 
 type TypeProjects = {
   image: string;
@@ -40,44 +39,42 @@ const Projects = () => {
       </div>
       {projects.map((project, index) => {
         return (
-          <Fade bottom>
-            <div className="flex md:flex-col items-center gap-[20px] bg-[#233554] pl-[18px] pr-[24px] pt-[58px] max-w-[1002px] mx-auto pb-[45px] rounded-tl-0 rounded-tr-[55px] rounded-br-0 rounded-bl-[55px]">
-              <div className="">
-                <Image
-                  src={project.image}
-                  alt="Porfolio picture"
-                  width={490}
-                  height={247}
-                ></Image>
-              </div>
-              <div>
-                <h1 className="text-[30px] font-bold mb-[10px] max-w-[450px]">
-                  {project.title}
-                </h1>
-                <p className="text-[18px] max-w-[450px] mb-[17px]">
-                  {project.description}
-                </p>
-                <div className="flex items-center gap-[20px]">
-                  <a href={project.githubLink}>
-                    <Image
-                      src="/icons/github-project-icon.png"
-                      alt="Github icon"
-                      width={27}
-                      height={27}
-                    />
-                  </a>
-                  <a href={project.liveLink}>
-                    <Image
-                      src="/icons/open-project-icon.png"
-                      alt="Live icon"
-                      width={27}
-                      height={27}
-                    />
-                  </a>
-                </div>
+          <div className="flex md:flex-col items-center gap-[20px] bg-[#233554] pl-[18px] pr-[24px] pt-[58px] max-w-[1002px] mx-auto pb-[45px] rounded-tl-0 rounded-tr-[55px] rounded-br-0 rounded-bl-[55px]">
+            <div className="">
+              <Image
+                src={project.image}
+                alt="Porfolio picture"
+                width={490}
+                height={247}
+              ></Image>
+            </div>
+            <div>
+              <h1 className="text-[30px] font-bold mb-[10px] max-w-[450px]">
+                {project.title}
+              </h1>
+              <p className="text-[18px] max-w-[450px] mb-[17px]">
+                {project.description}
+              </p>
+              <div className="flex items-center gap-[20px]">
+                <a href={project.githubLink}>
+                  <Image
+                    src="/icons/github-project-icon.png"
+                    alt="Github icon"
+                    width={27}
+                    height={27}
+                  />
+                </a>
+                <a href={project.liveLink}>
+                  <Image
+                    src="/icons/open-project-icon.png"
+                    alt="Live icon"
+                    width={27}
+                    height={27}
+                  />
+                </a>
               </div>
             </div>
-          </Fade>
+          </div>
         );
       })}
     </section>
