@@ -17,7 +17,7 @@ const Projects = () => {
       image: "/moviesensei.png",
       title: "Movie Sensei",
       description:
-        "I launched MovieSensei a SAAS platform powered by React.js, Redux, and Tailwind on the front-end, and Node.js, Express.js, and MongoDB on the backend. With the OpenAI API and OMDBAPI integration, accurate movie recommendations thrive. OAuth 2.0 ensures secure authentication, MongoDB safeguards user data, and AWS hosting guarantees a smooth user experience. Explore on GitHub or live here.",
+        "I launched MovieSensei a SAAS platform powered by React.js, and Tailwind on the front-end, and Node.js, Express.js, and MongoDB on the backend. With the OpenAI API and OMDBAPI integration, accurate movie recommendations thrive. OAuth 2.0 ensures secure authentication, MongoDB safeguards user data, and AWS hosting guarantees a smooth user experience. Explore on GitHub or live here.",
       githubLink: "https://github.com/martinyis/MovieSensei",
       liveLink: "https://movie-sensei.vercel.app/",
     },
