@@ -26,7 +26,7 @@ const SmallProjects = (props: Props) => {
       title: "Notes App",
       description:
         "Developed an interactive notes app using React, inspired by a public design on Figma.",
-      technologies: ["React"],
+      technologies: ["React", "Javascript", "CSS"],
     },
   ];
   return (
