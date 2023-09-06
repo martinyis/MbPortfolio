@@ -31,7 +31,6 @@ module.exports = {
         primary: "#FFFFFF",
         secondary: "#A8B2D1",
         title: "#D9D9D9",
-        // title: "#FFFFFF",
       },
     },
   },
