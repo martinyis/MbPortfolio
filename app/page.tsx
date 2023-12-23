@@ -5,7 +5,6 @@ import Projects from "@/components/Projects";
 import SmallProjects from "@/components/SmallProjects";
 import Image from "next/image";
 import Link from "next/link";
-
 const images = [
   { path: "/icons/github.png", link: "https://github.com/martinyis" },
   {
@@ -16,6 +15,7 @@ const images = [
 export default function Home() {
   return (
     <main className="max-w-[1400px] px-10 md:px-5 mx-auto pb-[109px]">
+      h1
       <About />
       <Experiances />
       <Projects />
